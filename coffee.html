@@ -47,19 +47,19 @@
 
 <script>
 
-    // var myImage = document.getElementById("coffee_image");
-    // var myRevenueMessage = document.getElementById("revenue");
+    // var $("coffee_image") = document.getElementById("coffee_image");
+    // var $("revenue") = document.getElementById("revenue");
 
-    // myImage.setAttribute('src', "static/coffee_beans.jpg");
+    // $("coffee_image").setAttribute('src', "static/coffee_beans.jpg");
 
-    // myImage.addEventListener('click', function () {
+    // $("coffee_image").addEventListener('click', function () {
     //     return makeCoffee("brew");
     // });
 
     // function makeCoffee() {
-    //      myImage.src = "static/coffee_machine.jpg";
-    //      setTimeout(function() { myImage.setAttribute('src', "static/coffee_mug.jpg"); }, 500);
-    //      setTimeout(function() { myImage.setAttribute('src', "static/coffee_beans.jpg"); }, 1500);
+    //      $("coffee_image").src = "static/coffee_machine.jpg";
+    //      setTimeout(function() { $("coffee_image").setAttribute('src', "static/coffee_mug.jpg"); }, 500);
+    //      setTimeout(function() { $("coffee_image").setAttribute('src', "static/coffee_beans.jpg"); }, 1500);
     // }
 
 
@@ -70,7 +70,7 @@
     });
 
     function makeCoffee() {
-         $("#coffee_image").src = "static/coffee_machine.jpg";
+         $("#coffee_image").attr("src","static/coffee_machine.jpg");
          setTimeout(function() { $("#coffee_image").attr('src', "static/coffee_mug.jpg"); }, 500);
          setTimeout(function() { $("#coffee_image").attr('src', "static/coffee_beans.jpg"); }, 1500);
      }
